@@ -13,7 +13,7 @@ def text_to_speech_crossplatform_with_gtts(input_text, output_filepath="output.m
     Works on Windows, macOS, and Linux.
     """
     # Step 1: Generate MP3
-    tts = gTTS(text=input_text, lang="en", slow=False)
+    tts = gTTS(text=input_text, lang="hi", slow=False)
     tts.save(output_filepath)
 
     # Step 2: Play the audio immediately
@@ -22,6 +22,6 @@ def text_to_speech_crossplatform_with_gtts(input_text, output_filepath="output.m
 
 
 # Example usage
-input_text = "Please wait a few seconds for the AI Doctor application to start."
+input_text = "Activating AI Doctor system... and now you can access the application by the provided url."
 text_to_speech_crossplatform_with_gtts(input_text, "gtts_testing_autoplay.mp3")
 
